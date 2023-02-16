@@ -16,6 +16,9 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
+
+   <!-- =============> Swiper.Js For Slider<============================ -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -269,8 +272,161 @@
    </section>
    <!-- FAQs end here======================== -->
 
+   <!-- =============Testimonial Start Here=============== -->
+   <section class="container testimonials_container  mySwiper">
+      <h2>Students' Testimonials</h2>
+      <div class="swiper-wrapper">
+         <article class="testimonial swiper-slide">
+            <div class="avatar">
+               <img src="./images/avatar1.jpg" alt="ava">
+            </div>
+            <div class="testimonial_info">
+               <h5>Diana Ayi</h5>
+               <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo voluptatem veniam. Nostrum
+                  nihil
+                  soluta quod eius earum laborum sunt rem id! Vitae corrupti nemo, hic odit delectus cupiditate et.</p>
+            </div>
+         </article>
+
+         <article class="testimonial swiper-slide">
+            <div class="avatar">
+               <img src="./images/avatar2.jpg" alt="ava">
+            </div>
+            <div class="testimonial_info">
+               <h5>Zenda</h5>
+               <small>Competative Programmer</small>
+            </div>
+            <div class="testimonial_body">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo voluptatem veniam. Nostrum
+                  nihil
+                  soluta quod eius earum laborum sunt rem id! Vitae corrupti nemo, hic odit delectus cupiditate et.</p>
+            </div>
+         </article>
+
+         <article class="testimonial swiper-slide">
+            <div class="avatar">
+               <img src="./images/avatar3.jpg" alt="ava">
+            </div>
+            <div class="testimonial_info">
+               <h5>Emma Watson</h5>
+               <small>UI/UX Designer</small>
+            </div>
+            <div class="testimonial_body">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo voluptatem veniam. Nostrum
+                  nihil
+                  soluta quod eius earum laborum sunt rem id! Vitae corrupti nemo, hic odit delectus cupiditate et.</p>
+            </div>
+         </article>
+
+         <article class="testimonial swiper-slide">
+            <div class="avatar">
+               <img src="./images/avatar4.jpg" alt="ava">
+            </div>
+            <div class="testimonial_info">
+               <h5>Danni</h5>
+               <small>App Developer</small>
+            </div>
+            <div class="testimonial_body">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo voluptatem veniam. Nostrum
+                  nihil
+                  soluta quod eius earum laborum sunt rem id! Vitae corrupti nemo, hic odit delectus cupiditate et.</p>
+            </div>
+         </article>
+
+         <article class="testimonial swiper-slide">
+            <div class="avatar">
+               <img src="./images/avatar5.jpg" alt="ava">
+            </div>
+            <div class="testimonial_info">
+               <h5>Marry</h5>
+               <small>Web Developer</small>
+            </div>
+            <div class="testimonial_body">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo voluptatem veniam. Nostrum
+                  nihil
+                  soluta quod eius earum laborum sunt rem id! Vitae corrupti nemo, hic odit delectus cupiditate et.</p>
+            </div>
+         </article>
+      </div>
+      <div class="swiper-pagination"></div>
+   </section>
+   <!-- =============Testimonial End Here=============== -->
+
+   <!-- ==========> Footer Start Here<========== -->
+   <footer class="footer">
+      <div class="container footer_container">
+         <div class="footer_1">
+            <a href="http://index.html" class="footer_logo">EGATOR</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nostrum ducimus nesciunt aliquid vero
+               aspernatur facere quod ratione alias ipsam.</p>
+         </div>
+
+         <div class="footer_2">
+            <h4>PermaLinks</h4>
+            <ul class="permalinks">
+               <li><a href="http://index.html">Home</a></li>
+               <li><a href="http://about.html">About</a></li>
+               <li><a href="http://courses.html">Courses</a></li>
+               <li><a href="http://contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+               <li><a href="http://#">Privacy Policy</a></li>
+               <li><a href="http://#">Terms and Conditions</a></li>
+               <li><a href="http://#">Refund Policy</a></li>
+            </ul>
+         </div>
+
+
+         <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+               <p>+69 9636369369</p>
+               <p>bahutthai@gmail.com</p>
+            </div>
+
+            <ul class="footer_socials">
+               <li><a href="http://#"><i class="uil uil-facebook-f"></i></a></li>
+               <li><a href="http://#"><i class="uil uil-instagram-alt"></i></a></li>
+               <li><a href="http://#"><i class="uil uil-twitter"></i></a></li>
+               <li><a href="http://#"><i class="uil uil-linkedin-alt"></i></a></li>
+            </ul>
+         </div>
+
+      </div>
+      <div class="footer_copyright">
+         <small>Copyright &copy; Anidravi </small>
+      </div>
+   </footer>
+   <!-- ==========> Footer Ends Here<========== -->
+
    <!-- ============================JAVASCRIPT FILES========================= -->
    <script src="main.js"></script>
+
+   <!-- Swiper.js For Slider -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         // when window width is >= 600px
+         breakpoints: {
+            600: {
+               slidesPerView: 2
+            }
+         }
+      });
+   </script>
 </body>
 
 </html>
